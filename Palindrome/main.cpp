@@ -7,22 +7,18 @@ using namespace std;
 int check(string);
 string s;
 
-
 int main()
 {
-
-	cout<<"Enter the string:"<<endl;
+        cout<<"Enter the string:"<<endl;
 	cin>>s;
 	int w=s.length();
 	for(int i=0;i<w;i++){
-
 
 	for(int k=0;k<=i;k++){
 		int g;
 		string d="";
 		g=s.length()-i;
 		d.append(s,k,g);
-
 
 	 if(check(d)!=0){
 		cout<<d;
@@ -43,6 +39,5 @@ int check(string x){
 		}else{
 		return 0;
 		}
-
 }
 }
